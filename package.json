@@ -8,7 +8,7 @@
     "prettier": "prettier --config .prettierrc src/**/*.ts --write",
     "build": "npx tsc",
     "jasmine": "jasmine",
-    "test": "npm run build && SET ENVX=test&& npx db-migrate db:create testing && npx db-migrate -e test up && npm run jasmine && npx db-migrate db:drop testing",
+    "test": "npm run build && SET ENV=test&& npx db-migrate db:create testing && npx db-migrate -e test up && npm run jasmine && npx db-migrate db:drop testing",
     "start": "nodemon dist/index.js"
   },
   "author": "",

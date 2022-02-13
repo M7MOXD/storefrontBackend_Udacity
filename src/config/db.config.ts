@@ -2,7 +2,7 @@
 import 'dotenv/config';
 
 export const {
-  ENVX,
+  ENV,
   POSTGRES_HOST,
   POSTGRES_DB,
   POSTGRES_TEST_DB,

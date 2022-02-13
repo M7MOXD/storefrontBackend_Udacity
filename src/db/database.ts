@@ -3,7 +3,7 @@ import { Pool } from 'pg';
 
 // import Environment Variables
 import {
-  ENVX,
+  ENV,
   POSTGRES_HOST,
   POSTGRES_DB,
   POSTGRES_TEST_DB,
@@ -15,7 +15,7 @@ import {
 // initialize Client
 let Client: Pool;
 
-if (ENVX === 'test') {
+if (ENV === 'test') {
   Client = new Pool({
     host: POSTGRES_HOST,
     database: POSTGRES_TEST_DB,
